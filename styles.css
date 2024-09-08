@@ -1,0 +1,82 @@
+/* Estilo general retro */
+body {
+    font-family: 'Press Start 2P', cursive; /* Fuente estilo retro pixelado */
+    background-color: #0d0d0d;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #00ff00;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #00ff00;
+}
+
+.instructivo {
+    margin-bottom: 30px;
+}
+
+#instructivo-btn {
+    font-size: 14px;
+    background-color: #00ff00;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#instructivo-btn:hover {
+    background-color: #00cc00;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.button-list {
+    margin-bottom: 30px;
+}
+
+button {
+    font-size: 14px;
+    background-color: #00ff00;
+    color: #1a1a1a;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00cc00;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
