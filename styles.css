@@ -1,74 +1,57 @@
-/* Estilo general retro */
+/* Estilos generales */
 body {
-    font-family: 'Press Start 2P', cursive; /* Fuente estilo retro pixelado */
-    background-color: #0d0d0d;
-    color: #00ff00;
-    margin: 0;
-    padding: 0;
+    font-family: 'Press Start 2P', cursive; /* Fuente retro estilo videojuego */
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #00ff00; /* Verde neón */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
     text-align: center;
 }
 
+/* Contenedor principal */
 .container {
-    max-width: 600px;
+    max-width: 800px;
     padding: 20px;
-    border: 2px solid #00ff00;
-    background-color: #1a1a1a;
-    border-radius: 15px;
+    border: 4px solid #00ff00; /* Bordes verde neón */
+    border-radius: 10px;
+    background-color: #000000;
 }
 
+/* Título principal */
 h1 {
-    font-size: 36px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
+/* Subtítulos de las secciones */
+h2 {
+    font-size: 18px;
+    margin: 20px 0;
+    text-decoration: underline;
+}
+
+/* Párrafo debajo del título */
 p {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 20px;
-    color: #00ff00;
 }
 
-.instructivo {
-    margin-bottom: 30px;
-}
-
-#instructivo-btn {
-    font-size: 14px;
+/* Estilo de los enlaces como botones */
+.example-btn {
+    font-size: 12px;
     background-color: #00ff00;
     color: #1a1a1a;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-#instructivo-btn:hover {
-    background-color: #00cc00;
-}
-
-h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.button-list {
-    margin-bottom: 30px;
-}
-
-.example-btn {
-    font-size: 14px;
-    background-color: #00ff00; /* Color verde neón */
-    color: #1a1a1a; /* Texto oscuro */
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
     margin: 5px;
-    transition: background-color 0.3s ease; /* Suave transición */
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box; /* Para que los botones no se desborden en pantallas pequeñas */
 }
 
 /* Cambia de color cuando el botón es presionado */
@@ -76,9 +59,79 @@ h2 {
     background-color: #00cc00; /* Verde más oscuro al pasar el cursor */
 }
 
-/* Ajuste para dispositivos móviles */
-@media (max-width: 600px) {
+/* Botón para el instructivo */
+#instructivo-btn {
+    font-size: 14px;
+    background-color: #ff9900; /* Naranja retro */
+    color: #000000;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 20px 0;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Adaptación del botón al ancho de la pantalla */
+    box-sizing: border-box;
+}
+
+/* Efecto hover para el botón de instructivo */
+#instructivo-btn:hover {
+    background-color: #e68a00;
+}
+
+/* Asegurar que el contenido esté centrado */
+.button-list {
+    margin: 10px 0;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
     .container {
-        width: 90%;
+        width: 100%;
+        padding: 10px;
+        border-width: 2px; /* Bordes más delgados en móviles */
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .example-btn, #instructivo-btn {
+        font-size: 10px; /* Reducir el tamaño de la fuente en botones */
+        padding: 8px 10px; /* Espaciado menor en pantallas pequeñas */
     }
 }
+
+/* Estilos para pantallas extra pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 9px;
+    }
+
+    .example-btn, #instructivo-btn {
+        font-size: 9px; /* Reducir aún más el tamaño en pantallas muy pequeñas */
+        padding: 6px 8px;
+    }
+}
+
