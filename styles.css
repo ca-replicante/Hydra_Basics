@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-    font-family: 'Press Start 2P', cursive; /* Fuente retro estilo videojuego */
+    font-family: "Inconsolata", monospace;
     background-color: #1a1a1a; /* Fondo oscuro */
     color: #ffffff; /* Verde neón */
     display: flex;
